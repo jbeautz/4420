@@ -40,6 +40,7 @@ $V$ must have a prime factorization which includes $2^2\cdot 5$ because 20 divid
 
 The value of $v$ in general will not produce a $V$ which 20 divides. In order to produce a $V$ with factors $2^2$  and $3$, $v = 20x + 6$ or $v = 20x + 2$. In this way only 20 is guaranteed to divide $V$.
 
+##Exercise 4
 
 
 
