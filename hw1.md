@@ -1,4 +1,4 @@
-<font color = "white">
+<font color = "black">
 
 Jack Beautz  
 jpb375  
@@ -22,7 +22,7 @@ Non Trivial Combinatorical designs have both a divisibility restriction and an i
 
 Adding $x$ to the design changes the $t-(v,k,\lambda)$ design to $t+1-(v+1, k+1, \lambda)$ constraint.  
 
-The first constraint states the number of blocks $b_i$ for a given $t$ must be an integer value. As shown in lecture,
+The first constraint states the number of blocks $b_i$ for a given $t$ must be an integer value. As shown in lecture for all $i\in \mathbb{Z}$ such that $0\leq i\leq t$,
 $$b_i = {{v-i\choose t-i}\over {k-i\choose t-i}}$$
 
 Adding the point $x$ changes the expression to be
