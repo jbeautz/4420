@@ -1,4 +1,4 @@
-<font color = white>  
+<font color = black>  
 
 Jack Beautz  
 jpb375  
@@ -11,25 +11,21 @@ Assume $v$ and $\lambda$ are odd.
 Consider the $2$-set $T=\{a,b\}$ such that $T\subset B_1,...,B_\lambda$.  
 
 
-Hence, any $2$-subset $T$ is contained in at most $\lambda=v-2$ blocks. If $\lambda$ is odd, it is possible that $v$ is too.  Hence, $\lambda$ and $v$ can both be odd or even. The statement is false.
+Hence, any $2$-subset $T$ is contained in at most $\lambda=v-2$ blocks where each block is $\{a,b,x\}$ and $x\in P-\{a,b\}$. If $\lambda$ is odd, it is possible that $v$ is too.  Hence, $\lambda$ and $v$ can both be odd or even. The statement is false.
 
 
 ###Exercise 2
-Prove there does not exist a 2 − (46, 10, 2) design with b = v.  
-
-Theorem 19.1 from the text gives the expression for number of blocks in a design.
-
-$$b = \lambda {{v\choose t}\over{k\choose t}}$$
-
-Hence, the number of blocks in a $2 − (46, 10, 2)$ design is
-$$b = 2 {{46\choose 2}\over{10\choose 2}}$$
-$$b = 2{1035\over 45}$$
-$$b = 46$$
+Assume the design exists.  
 
 Let $T=\{a,b\}$ such that $a,b\in P$. By definition, $T\subset B_0$ and $T\subset B_1$ where $B_0,B_1$ are the only two blocks containing $T$. The other 44 blocks must not contain both $a$ and $b$. Of the blocks that contain $a$ or $b$ but not both we have a $2-(44, 9, 2)$ design on $P'=P-(\{a\}\cup\{b\})$ and $\mathcal B' = \{B-(\{a\}\cup\{b\}): B\in \mathcal B\}$.  
 We can continue selecting 2-subsets such that each time we create a new deign $(P',\mathcal B')$ such that those 2 points are not both contained in the remaining blocks.  
 
 Consider the design $2-(28,2,2)$. Here each 2-subset is contained in two different blocks, but the blocks have cardinality 2. Hence, each two subset can only be contained in at most one unique block.  This design does not exist. But it is derived from $2-(46,10,2)$. Hence, there does not exist a $2-(46,10,2)$ design.
+
+Alternatively note that the $2-(44,9,2)$ design does not satisfy the division restriction on designs. By formula 19.2 the number of blocks in this system is
+$$b = 2{{44\choose 2}\over{9\choose 2}}$$
+$$b = 27.27777$$
+The number of blocks must be an integer. Hence, the derived design does not exist.
 
 
 ##Exercise 3  
