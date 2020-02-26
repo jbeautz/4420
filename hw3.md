@@ -1,4 +1,4 @@
-<font color = white>  
+<font color = black>  
 
 Jack Beautz  
 jpb375  
@@ -6,7 +6,7 @@ jpb375
 #MATH 4420 Homework 3
 
 ##Exercise 1
-
+Not assigned
 ##Exercise 2
 (a) There are $q^n$ was to choose $n$ elements out of the $q$ possibilities in the field.  
 But to create a subspace we should only consider the $q^n-1$ possibilities not including all all $0$ elements for the $n$ elements.  
@@ -42,8 +42,16 @@ Hence, the initial assumption was false. Therefore,
 $$r(A) + r(B) \geq r(A\cup B) + r(A\cap B)$$
 
 
+##Exercise 4
+$U$ is a $k$-subset contained in exactly $\lambda$ blocks where $\mathcal B$ is the set of every $k+1$ subspace in $F^n_q$. Thus this is a $k-(n,k+1,\lambda)$ design. From Exercise 2 of this assignment we know there are ${n\choose k+1}_q$ $k+1$ subspaces of $F^n$ where $|F| = q$. Hence, there are ${n\choose k}_q$ blocks in this design.  
 
+The following formula gives the number of blocks in a $t$-design.  
+$$b= \lambda {{v\choose t}\over {k\choose t}}$$
+Using this instance of subspaces in $F^n$
+$${n\choose k}_q = \lambda {{n\choose k}\over {k+1\choose k}}$$
+$$\lambda = {n\choose k}_q {{k+1\choose k}\over {n\choose k}}$$
 
+$\lambda$ is the number of $k+1$ subspaces containing $U$.  
 
 
 
