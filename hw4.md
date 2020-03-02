@@ -33,10 +33,24 @@ First consider (i). Let $U$ and $W$ be subspaces of $V$. Let $G\in F_E$ and $H\i
 
 Now consider (ii). $\emptyset\in F_E$ is defined as $\{E\cap U: U\subseteq V\}$ where $U\cap E = \emptyset$. $E\in F_E$ is defined as $\{E\cap E: E\subseteq V\}$. Every vector in $E$ is included in the intersection. Finally, define the set of subspaces $U_1,...,U_n$ such that $U_i = span(v_i)$, $\forall v_i\in E$. There exists a flat corresponding to each singleton $v_i$ defined as $\{E\cap U_i: U_i \subseteq V\}$.  
 
-Finally consider (iii). Let $v_k\in E-G$ such that $H$ covers $G$ and $\{v_k\}$. If $H$ covers $G$ and $\{v_k\}$ then $H$ is defined as $\{E\cap ((E-G) \cap \{v_k\}):((E-G) \cap \{v_k\})\subseteq V\}$. Hence, $H$ exists. Suppose $H$ was not unique for each $v_k$. 
+Finally consider (iii). Let $v_k\in E-G$ such that $H$ covers $G$ and $\{v_k\}$. If $H$ covers $G$ and $\{v_k\}$ then $H$ is defined as $\{E\cap ((E-G) \cap \{v_k\}):((E-G) \cap \{v_k\})\subseteq V\}$. Hence, $H$ exists. Suppose $H$ was not unique for each $v_k$. There must also exist $H'$ such that $H'$ covers $E-G$ and $v_k$. The only way to define this flat however is $\{E\cap ((E-G) \cap \{v_k\}):((E-G) \cap \{v_k\})\subseteq V\}$.  Hence, $H' = H$ and therefore the covers of $G$ partition $E-G$.  
+
+Because these criteria are met $(E, F_E)$ is a combinatorical geometry.
 
 
+##Exercise 3
+First prove there exists $m$ and $E = \{v_1,...,v_n\}$ such that $(E,F_E)$ is isomorphic to $([n],F)$ if $|F|\geq n-1$.  
+The flats of $([n],F)$ are the empty set, $[n]$, and each of the $n$ singletons. Hence, there are $n+2$ flats.  
+Let $f$ be the bijective function which maps flats from $([n],F)\to (E,F_E)$.  
+Define $f:\{i\}\to F_i$, $\forall i\in [n]$, where $F_i=\{E\cap span(v_i)\}$. Define $f:[n]\to F_V$ where $F_V=\{E\cap V\}$. And define $f:\emptyset\to F_\emptyset$ where $F_\emptyset = \{E\cap \emptyset\}$.  
 
 
+Now prove if there exists $m$ and $E = \{v_1,...,v_n\}$ such that $(E,F_E)$ is isomorphic to $([n],F)$ then $|F|\geq n-1$.  
+Consider the case where $|F|<n-1$. Then scalar multiplication to $v_i\in F^m$ could result in another vector $v_j\in F^m$ such that $v_j\in span(v_i)$. In this case the function $f$ as described is not a bijection and there is no isomorphism. For $|F|\geq n-1$ and a specific $m$, all vectors are linearly independent in $F^m$.  
+
+Because the flats can be mapped bijectively between geometries, $(E,F_E)$ and $([n],F)$ are isomorphic if $|F|\geq n-1$.  
+
+
+##Exercise 4
 
 ***THE END***
