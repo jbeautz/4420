@@ -52,5 +52,22 @@ Because the flats can be mapped bijectively between geometries, $(E,F_E)$ and $(
 
 
 ##Exercise 4
+$(X, F-H)$ is a combinatorical geometry if it satisfies
+(i) $F_E$ is closed under intersection  
+(ii) $\emptyset$,$E$ and singletons $\{x\}\in F_E$ are contained in $F_E$.  
+(iii) $\forall x\in E-G$, $\exists ! K\in F$ such that $K$ covers $G$ and $x\in K$.  
+
+First, (i). $F-H$ is closed under intersection such that for $U,W\in F-H$, $U\cap W\in F-H$. We know that $F$ must be closed under intersection because $(X,F)$ is a combinatorical geometry.  
+Suppose there exists $U,W\in F-H$ such that $U\cap W\in H$, then $F-H$ would not be closed under intersection.  
+Then $U\cap W$ is one of the maximal elements of $F$ with regard to set inclusion. There exists no $Y\in X$ such that $U\cap W\subset Y$. But, by definition, $U\cap W\subset U$ so it is not a maximal element. Hence, $F-H$ is closed under intersection.  
+
+Next, (ii). $(X,F)$ is a combinatorical geometry. $F-H$ does not contain the empty set, $X$ by definition. If $H$ contains all of the singletons, then the remaining combinatorical geometry is $(X,F_0)$ where $F_0$ contains two flats, the empty set and the maximal set. Therefore (ii) is satisfied.  
+
+Finally, (iii). Suppose $(X,F-H)$ is a combinatorical geometry where there is no independent set of $(X,F)$ with at least three elements.  
+Then every flat with at least three elements has a dependency. Let three of the elements be $\{X_1,X_2,X_3\}$ such that $X_1\subset X_2$.  
+
+
+
+
 
 ***THE END***
