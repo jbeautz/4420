@@ -63,9 +63,14 @@ Then $U\cap W$ is one of the maximal elements of $F$ with regard to set inclusio
 
 Next, (ii). $(X,F)$ is a combinatorical geometry. $F-H$ does not contain the empty set, $X$ by definition. If $H$ contains all of the singletons, then the remaining combinatorical geometry is $(X,F_0)$ where $F_0$ contains two flats, the empty set and the maximal set. Therefore (ii) is satisfied.  
 
-Finally, (iii). Suppose $(X,F-H)$ is a combinatorical geometry where there is no independent set of $(X,F)$ with at least three elements.  
-Then every flat with at least three elements has a dependency. Let three of the elements be $\{X_1,X_2,X_3\}$ such that $X_1\subset X_2$.  
+Finally, (iii). Suppose $(X,F-H)$ is a combinatorical geometry such that there is no independent set of $(X,F)$ with at least three elements.  
+Then every flat with at least three elements has a dependency.
+Consider the flat $F = \{X_1,X_2, X_3, ..., X_n\}$. Then without loss of generality there must be a dependency such that $X_1\subseteq X_2\cup X_3$. Because $(X,F-H)$ is a combinatorical geometry, $F_n = \{X_n\} = F - \{X_1,X_2, ..., X_{n-1}\}$ must be covered by the unique flats $F_n \cup \{X_1\}$ and $F_n\cup \{X_2\}$ and $F_n\cup \{X_3\}$. But there is a dependency between these "unique" flats such that $F_n\cup \{X_1\}\subseteq (F_n\cup\{X_2\})\cup (F_n\cup\{X_3\})$
 
+THIS DOES NOT WORK YETT
+
+Let three of the elements be $\{X_1,X_2,X_3\}$ such that $X_1\subset X_2\cup X_3$.  
+Let $X_2$ be a maximal element such that $X_2\in H$.
 
 
 
