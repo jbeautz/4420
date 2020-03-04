@@ -52,7 +52,7 @@ Because the flats can be mapped bijectively between geometries, $(E,F_E)$ and $(
 
 
 ##Exercise 4
-$(X, F-H)$ is a combinatorical geometry if it satisfies
+$(X, F-H)$ is a combinatorical geometry if it satisfies  
 (i) $F_E$ is closed under intersection  
 (ii) $\emptyset$,$E$ and singletons $\{x\}\in F_E$ are contained in $F_E$.  
 (iii) $\forall x\in E-G$, $\exists ! K\in F$ such that $K$ covers $G$ and $x\in K$.  
@@ -65,12 +65,18 @@ Next, (ii). $(X,F)$ is a combinatorical geometry. $F-H$ does not contain the emp
 
 Finally, (iii). Suppose $(X,F-H)$ is a combinatorical geometry such that there is no independent set of $(X,F)$ with at least three elements.  
 Then every flat with at least three elements has a dependency.
-Consider the flat $F = \{X_1,X_2, X_3, ..., X_n\}$. Then without loss of generality there must be a dependency such that $X_1\subseteq X_2\cup X_3$. Because $(X,F-H)$ is a combinatorical geometry, $F_n = \{X_n\} = F - \{X_1,X_2, ..., X_{n-1}\}$ must be covered by the unique flats $F_n \cup \{X_1\}$ and $F_n\cup \{X_2\}$ and $F_n\cup \{X_3\}$. But there is a dependency between these "unique" flats such that $F_n\cup \{X_1\}\subseteq (F_n\cup\{X_2\})\cup (F_n\cup\{X_3\})$
+Consider the flat $F = \{X_1,X_2, X_3, ..., X_n\}$. Then without loss of generality there must be a dependency such that $X_1\subseteq X_2\cup X_3$. Because $(X,F-H)$ is a combinatorical geometry, $F_n = \{X_n\} = F - \{X_1,X_2, ..., X_{n-1}\}$ must be covered by the unique flats $F_n \cup \{X_1\}$ and $F_n\cup \{X_2\}$ and $F_n\cup \{X_3\}$. But there is a dependency between these "unique" flats such that $F_n\cup \{X_1\}\subseteq (F_n\cup\{X_2\})\cup (F_n\cup\{X_3\})$. By semimodularity there exists a flat which covers $F_n\cup\{X_2\}$ and $F_n\cup\{X_3\}$. This flat must be $F_3 = F_n\cup(\{X_2,X_3\}$. But we have a contradiction because $F_n\cup \{X_1\}\subseteq F_3$. The elements $X_1,...,X_n$ are atoms so at some point in the geometry this semimodularity contradiction must arise.  
 
-THIS DOES NOT WORK YETT
+##Exercise 5
+Let $\mathcal L$ be a linear space such that $(P, L)$ is the corresponding combinatorical design over the set of points $P$ contained in flats $L\in \mathcal L$ corresponding to lines. Let there be a line through every possible combination of points.  
 
-Let three of the elements be $\{X_1,X_2,X_3\}$ such that $X_1\subset X_2\cup X_3$.  
-Let $X_2$ be a maximal element such that $X_2\in H$.
+The empty set is the line with no points in it. The singletons are lines $L_p\in \mathcal L$ which contain only one point $p\in P$. The maximal flat is the line which contains every point $p\in P$.  
+
+The lines are closed under intersection because every combination of points in a unique line.  
+
+Let $Q\subset P$. The covers of $Q$ partition $P-Q$ because every pair of points partitions one line.
+
+Consider points on the same line as dependent on each other. Then, the maximum cardinality of an independent set on the corresponding combinatorical geometry will be 3. Hence, the rank of the combinatorical design is 3.
 
 
 
