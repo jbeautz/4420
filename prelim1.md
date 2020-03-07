@@ -37,14 +37,27 @@ But we know there are a minimum of $b_{t,v}$ blocks to sum through.
 $$N = b_{t,v}\sum_{T\subseteq B} 1$$
 Let $l_i$ be the cardinality of the $i$th block. In this block there are $l_i\choose t$ $t$-subsets. Then the maximum size of a block is $v\over b_{t,v}$. Thus the maximum number of subsets is ${v\over b_{t,v}}\choose t$
 
-
+***NEEDS WORK***
 
 
 ##Question 2
+(a) Suppose there exists $x\not\in L_1$ such that there is no line containing $x$ in the space $A_L$. $A_L$ is a linear space so every pair of points is in exactly one line. Consider the pair $(x, y)$ which must be in one line. But $x$ is not in any lines. Thus there is a contradiction. There must exist a line $L_2$ such that $x\in L_2$.
 
+Because $A_L$ is a linear space, there must exist a line $L_2$ between points $(x,y)$. Let $z$ be another point such that there exists another line $L_z$ defined by the pair $(y,z)$.  The smallest projective plane conatains $7$ points and results in $A_L$ containing 4 points as stated in the problem description. Thus, there is at least one other point $a$ such that $(a,z)$ is contained in a line. Call this line $L_1$ and let it contain no other elements such that $L_1\cap L_2 = \emptyset$.  
 
+Fix $L_1$. $L_2$ must be unique. Suppose there is another line $L_2'$ such that $x\in L_2'$ and $L_1\cap L_2' = \emptyset$. Let $(a,z)\subseteq L_1$ and $(x,y')\subseteq L_2'$ and $(x,y)\subseteq L_2$, $y'\neq y$. Then,  
+***UNIQUENESS NEEDED***
 
+(b) For each line parallel to a line in $\mathcal{L}-L$, there exists a unique point not in the line which is in the parallel line. Hence, we can build any three lines using part (a).  
+Let $L_1,L_2,L_3\in \mathcal{L}-L$ be distinct lines. By part (a) of this question we know that for $L_1$ and a point $x\not\in L_1$, there must exist a unique line $L_2$ such that $x\in L_2$ and $L_2\cap L_1 = \emptyset$. For $L_2$ and some point $y\not\in L_2$ there exists a line $L_3$ such that $L_3\cap L_2 = \emptyset$.
+There is unique line corresponding to $L_1$ and the point $y\not\in L_1$. This line is $L_3$ and $L_3\cap L_1 = \emptyset$. Suppose this line was not $L_3$. Then, there is another line $L_4$ parallel to $L_1$ which contains $y$. But then $L_4$ is also parallel to $L_1, L_2$. So there must be a unique $z\not\in L_1$ such that $z\in L_4$ and $L_4\cap L_1 = \emptyset$.  
+Hence, if $L_1\cap L_2 = \emptyset$ and $L_2\cap L_3 = \emptyset$, then $L_1\cap L_3 = \emptyset$.
 
+###Question 3
+Let $L^ {* }$ be the poset dual of $L$, a geometric lattice.  
+
+Let $A^{* }$ denote the set of atoms of $L^ {* }$. Let $z\in L^ {* }$. Because $z\in L^ {* }$, it must also have been in the geometric lattice $L$. Let $A\subset L$ be the set of atoms of $L$. These atoms in $L$ are the elements covered by the maximal element in $L^{* }$. Because of semimodularity, if there exists $x,y\in L$ which cover $z$, there must also be $a\in L$ which covers $x$ and $y$.  
+In the geometric lattice, there may be other elements which cover $x$ or $y$. Move up the lattice iteratively using semimodularity. Let $A'$ be the set of all elements in $A^{* }$ such that the meet of these elements is $x$. This set must exist due to the semimodularity of $L$ and it is equivalent to the atoms which join together to form $z$ in $L^{* }$. Thus, for any element $z$ in a lattice, the set of atoms which join together to make up $z$ can be constructed using the semimodularity and meets of the geometric poset dual $L^ {* }$.
 
 
 
