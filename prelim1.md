@@ -48,15 +48,17 @@ Because the upper bound on ways to count elements in each $t$-set is all possibl
 ##Question 2
 (a) Suppose there exists $x\not\in L_1$ such that there is no line containing $x$ in the space $A_L$. $A_L$ is a linear space so every pair of points is in exactly one line. Consider the pair $(x, y)$ which must be in one line. But $x$ is not in any lines. Thus there is a contradiction. There must exist a line $L_2$ such that $x\in L_2$.
 
-Because $A_L$ is a linear space, there must exist a line $L_2$ between points $(x,y)$. Let $z$ be another point such that there exists another line $L_z$ defined by the pair $(y,z)$.  The smallest projective plane conatains $7$ points and results in $A_L$ containing 4 points as stated in the problem description. Thus, there is at least one other point $a$ such that $(a,z)$ is contained in a line. Call this line $L_1$ and let it contain no other elements such that $L_1\cap L_2 = \emptyset$.  
+Because $A_L$ is a linear space, there must exist a line $L_2$ between points $(x,y)$. Let $z$ be another point such that there exists another line $L_z$ defined by the pair $(y,z)$.  The smallest projective plane conatains $7$ points and results in $A_L$ containing 4 points as stated in the problem description. Thus, there is at least one other point $a$, in all cases, such that $(a,z)$ is contained in a line. Call this line $L_1$ and let it contain no other elements such that $L_1\cap L_2 = \emptyset$.  
 
-Fix $L_1$. $L_2$ must be unique. Suppose there is another line $L_2'$ such that $x\in L_2'$ and $L_1\cap L_2' = \emptyset$. Let $(a,z)\subseteq L_1$ and $(x,y')\subseteq L_2'$ and $(x,y)\subseteq L_2$, $y'\neq y$. Then,  
+Fix $L_1$. $L_2$ must be unique. Suppose there is another line $L_2'$ such that $x\in L_2'$ and $L_1\cap L_2' = \emptyset$. Let $(a,z)\subseteq L_1$ and $(x,y')\subseteq L_2'$ and $(x,y)\subseteq L_2$, $y'\neq y$. Consider the unique lines parallel to $L_1$ which contain $y$ and $y'$.
+
 ***UNIQUENESS NEEDED***
 
-(b) For each line parallel to a line in $\mathcal{L}-L$, there exists a unique point not in the line which is in the parallel line. Hence, we can build any three lines using part (a).  
+(b) For each line in $\mathcal{L}-L$, there exists a unique point not in the line which is in the parallel line. Hence, we can build any three lines using part (a).  
 Let $L_1,L_2,L_3\in \mathcal{L}-L$ be distinct lines. By part (a) of this question we know that for $L_1$ and a point $x\not\in L_1$, there must exist a unique line $L_2$ such that $x\in L_2$ and $L_2\cap L_1 = \emptyset$. For $L_2$ and some point $y\not\in L_2$ there exists a line $L_3$ such that $L_3\cap L_2 = \emptyset$.
-There is unique line corresponding to $L_1$ and the point $y\not\in L_1$. This line is $L_3$ and $L_3\cap L_1 = \emptyset$. Suppose this line was not $L_3$. Then, there is another line $L_4$ parallel to $L_1$ which contains $y$. But then $L_4$ is also parallel to $L_1, L_2$. So there must be a unique $z\not\in L_1$ such that $z\in L_4$ and $L_4\cap L_1 = \emptyset$.  
-Hence, if $L_1\cap L_2 = \emptyset$ and $L_2\cap L_3 = \emptyset$, then $L_1\cap L_3 = \emptyset$.
+There is unique line corresponding to $L_1$ and the point $y\not\in L_1$. This line is $L_3$ and $L_3\cap L_1 = \emptyset$. Suppose this line was not $L_3$. Then, there is another line $L_4$ parallel to $L_1$ which contains $y$. But then $L_4$ is also parallel to $L_1, L_2$. So there must be a unique $z\not\in L_1$ such that $z\in L_4$ and $L_4\cap L_1 = \emptyset$. $L_4$ becomes the $L_3$ in the previous statement.   
+Hence, if $L_1\cap L_2 = \emptyset$ and $L_2\cap L_3 = \emptyset$, then $L_1\cap L_3 = \emptyset$.  
+Because the result of part (a) holds a unique result for $L$ and each point not in $L$, it accounts for all lines parallel to $L$. Assume there is a line $L'$ parallel to $L$ which does not contain a unique point not in $L$. Then $L'$ contains a point in $L$ and is not parallel. Thus, the argument above accounts for all lines parallel to $L_1,L_2,L_3$.  
 
 ###Question 3
 Let $L^ {* }$ be the poset dual of $L$, a geometric lattice.  
@@ -65,8 +67,28 @@ Let $A^{* }$ denote the set of atoms of $L^ {* }$. Let $z\in L^ {* }$. Because $
 In the geometric lattice, there may be other elements which cover $x$ or $y$. Move up the lattice iteratively using semimodularity. Let $A'$ be the set of all elements in $A^{* }$ such that the meet of these elements is $x$. This set must exist due to the semimodularity of $L$ and it is equivalent to the atoms which join together to form $z$ in $L^{* }$. Thus, for any element $z$ in a lattice, the set of atoms which join together to make up $z$ can be constructed using the semimodularity and meets of the geometric poset dual $L^ {* }$.
 
 
+###Question 4
+(a) A lattice is a poset $L$ such that $\forall x,y\in L$, $x\land y$ and $x\lor y$ exist.  
 
+Let $A,B\in X$. Define $A\lor B$ as the smallest set $Z$ such that $A\cup B \subseteq Z$.  But $A\cup B\subseteq X$ so $Z\subseteq X$. Thus, $Z$ exists.  
+Define $A\land B$ as the maximal set $W$ such that $W\subseteq A\cap B$. Because $A, B\subseteq X$, $A\cap B\subseteq X$.  Thus, $W$ exists and is a subset of $X$.  
 
+(b) $c$ is a closure operator if for all $A,B\subseteq X$,  
+(i) $A\subseteq c(A)$  
+(ii) If $A\subseteq B$, then $c(A)\subseteq c(B)$  
+(iii) $c(c(A)) = c(A)$  
+
+First, suppose there exists $A\subseteq X$ such that $A\not\subseteq c(A)$ such that $(i)$ is not true.
+$$c(A) = \{y\in J: y\leq\bigvee A\}$$
+Let $B = c(A)$. We know for every element $x\in B$, $x\in J$ because $B=c(A)$. We also know $A\subseteq B$, which means for $\bigvee A\leq \bigvee B$ so if $x\leq \bigvee A$, $x\leq \bigvee B$. Hence, $\forall x\in B$, $x\in J$ and $x\leq \bigvee B$. Thus, if $x\in A$, $x\in B$.  $A\subseteq c(A)$. So $(i)$ holds.  
+
+Next, suppose there exists $A,B$ such that $A\subseteq B$ and $c(A)\not\subseteq c(B)$. There must be an element $x\in c(A)$ such that $x\not\in c(B)$. $x\in c(A)$ so $x\in J$ and $x\leq \bigvee A$. Hence, if $x\not\in c(B)$, then $x> \bigvee B$. But $A\subseteq B$ so $\bigvee A \leq \bigvee B$. Thus, $x\leq \bigvee A \leq \bigvee B$ and $x\in c(B)$. So, (ii) holds.  
+
+Finally, (iii) is proven by showing $c(A)\subseteq c(c(A))$ and $c(c(A))\subseteq c(A)$. First, $c(A)\subseteq c(c(A))$. This was proved in (ii) so it must be true.  Next, $c(c(A))\subseteq c(A)$. Suppose there exists $x\in c(c(A))$ such that $x\not\in c(A)$. $x\in c(c(A))$ so it must also be true that $x\in J$. Therefore, $x> \bigvee c(A)$ and $x\leq \bigvee c(c(A))$. Both $\bigvee c(A)$ and $\bigvee c(c(A))$ are the join of all all $a\in A$. Thus, $\bigvee c(A)= \bigvee c(c(A))$. Hence, $x > \bigvee c(A)$ and $x \leq \bigvee A$. This is a contradiction. Therefore $c(A)=c(c(A))$. So, (iii) holds.  
+
+Because all three properties of the defintion of a closure operator hold for $c(A)$, $c$ must be a closure operator.  
+
+$(c)$ 
 
 
 
