@@ -77,19 +77,27 @@ Define $A\land B$ as the maximal set $W$ such that $W\subseteq A\cap B$. Because
 (i) $A\subseteq c(A)$  
 (ii) If $A\subseteq B$, then $c(A)\subseteq c(B)$  
 (iii) $c(c(A)) = c(A)$  
-
-First, suppose there exists $A\subseteq X$ such that $A\not\subseteq c(A)$ such that $(i)$ is not true.
 $$c(A) = \{y\in J: y\leq\bigvee A\}$$
+
+First, suppose there exists $A\subseteq J$ such that $A\not\subseteq c(A)$ such that $(i)$ is not true.
 Let $B = c(A)$. We know for every element $x\in B$, $x\in J$ because $B=c(A)$. We also know $A\subseteq B$, which means for $\bigvee A\leq \bigvee B$ so if $x\leq \bigvee A$, $x\leq \bigvee B$. Hence, $\forall x\in B$, $x\in J$ and $x\leq \bigvee B$. Thus, if $x\in A$, $x\in B$.  $A\subseteq c(A)$. So $(i)$ holds.  
 
-Next, suppose there exists $A,B$ such that $A\subseteq B$ and $c(A)\not\subseteq c(B)$. There must be an element $x\in c(A)$ such that $x\not\in c(B)$. $x\in c(A)$ so $x\in J$ and $x\leq \bigvee A$. Hence, if $x\not\in c(B)$, then $x> \bigvee B$. But $A\subseteq B$ so $\bigvee A \leq \bigvee B$. Thus, $x\leq \bigvee A \leq \bigvee B$ and $x\in c(B)$. So, (ii) holds.  
+Next, suppose there exists $A,B\subseteq J$ such that $A\subseteq B$ and $c(A)\not\subseteq c(B)$. There must be an element $x\in c(A)$ such that $x\not\in c(B)$. $x\in c(A)$ so $x\in J$ and $x\leq \bigvee A$. Hence, if $x\not\in c(B)$, then $x> \bigvee B$. But $A\subseteq B$ so $\bigvee A \leq \bigvee B$. Thus, $x\leq \bigvee A \leq \bigvee B$ and $x\in c(B)$. So, (ii) holds.  
 
 Finally, (iii) is proven by showing $c(A)\subseteq c(c(A))$ and $c(c(A))\subseteq c(A)$. First, $c(A)\subseteq c(c(A))$. This was proved in (ii) so it must be true.  Next, $c(c(A))\subseteq c(A)$. Suppose there exists $x\in c(c(A))$ such that $x\not\in c(A)$. $x\in c(c(A))$ so it must also be true that $x\in J$. Therefore, $x> \bigvee c(A)$ and $x\leq \bigvee c(c(A))$. Both $\bigvee c(A)$ and $\bigvee c(c(A))$ are the join of all all $a\in A$. Thus, $\bigvee c(A)= \bigvee c(c(A))$. Hence, $x > \bigvee c(A)$ and $x \leq \bigvee A$. This is a contradiction. Therefore $c(A)=c(c(A))$. So, (iii) holds.  
 
 Because all three properties of the defintion of a closure operator hold for $c(A)$, $c$ must be a closure operator.  
 
-$(c)$ 
+$(c)$ Let $A$ be a closed set of $L$ such that $A$ is not defined by $D(x) = \{y\in J: y\leq x\}$ for some $x\in L$. $c(A)$ is a closure operator by part (b). This means $A=c(A)=\{y\in J: y\leq \bigvee A\}$. $A$ is a subset of lattice elements so by definition $\bigvee A\in L$ must exist. Let $x_0 = \bigvee A$. Then, $A = D(x_0)$. Thus all closed sets of $L$ are of the form $D(x)$ for some $x$.  
 
+(d) For each $x\in L$, there is a unique result of the function $D(x) = \{y\in J: y\leq x\}$. $D(x_0)$ and $D(x_1)$ where $x_0\neq x_1$ and without loss of generality, $x_0<x_1$. Suppose $D(x_0)=D(x_1)$, then $\{y\in J:y\leq x\}=\{y\in J:y\leq x_1\}$. But $x_0<x_1$ so there exists some $y\in J$ such that $x_0<y\leq x_1$. $y\in D(x_1)$ but $y\not\in D(x_0)$. Thus the sets are not equal. Hence, $D$ is injective.  
+Suppose there exists $D(x_0)\in c$ such that $x\not\in L$.  Then $D(x_0)$ is a closed set not of the form $D(x)$ for some $x\in L$. In part $(c)$ this was shown to be impossible. Thus, the function $D$ is sujective.  
+Suppose the relation of the posets $c$ and $L$ was not maintained under the function $D$. Then for $a,b\in L$ where $a\leq b$ we have $D(a)> D(b)$. Hence, $D(b)=\{y\in J: y\leq b\}\subset \{y\in J: y\leq a\}=D(a)$. Then there exists $y\in D(a)$ such that $y\not\in D(b)$. This means $y\leq a$ and $y>b$ for some $y\leq a \leq b$. This is a contradiction. Thus the poset relations are maintained.  
+
+Because $D$ is both injective and surjective and the relation is maintained it is a poset isomorphism.
+
+
+##Question 5
 
 
 
