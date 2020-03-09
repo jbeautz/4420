@@ -53,6 +53,7 @@ Fix $L_1$. $L_2$ must be unique. Suppose there is another line $L_2'$ such that 
 But $x\in (x,a)$ and $x\in (x,z)$. Both of which are parallel to $(y,y')$. Thus $(y,y')$ cannot exist and as a result $(x,y)$ is unique with respect to the property.  
 
 ***UNIQUENESS STILL NEEDED***
+***(x,y,y')--> same line???***
 
 (b) For each line in $\mathcal{L}-L$, there exists a unique point not in the line which is in the parallel line. We can build any three lines using part (a).  
 Let $L_1,L_2,L_3\in \mathcal{L}-L$ be distinct lines. By part (a) of this question we know that for $L_1$ and a point $x\not\in L_1$, there must exist a unique line $L_2$ such that $x\in L_2$ and $L_2\cap L_1 = \emptyset$. For $L_2$ and some point $y\not\in L_2$ there exists a line $L_3$ such that $L_3\cap L_2 = \emptyset$.
