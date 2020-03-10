@@ -57,11 +57,12 @@ Consider $L_0\in \mathcal{L}-L$ and $x\not\in L_0$ . There are $n^2-1$ points in
 Let $L_1,L_2,L_3\in \mathcal{L}-L$ be distinct lines. By part (a) of this question we know that for $L_1$ and a point $x\not\in L_1$, there must exist a unique line $L_2$ such that $x\in L_2$ and $L_2\cap L_1 = \emptyset$. For $L_2$ and some point $y\not\in L_2$ there exists a line $L_3$ such that $L_3\cap L_2 = \emptyset$.
 There is unique line corresponding to $L_1$ and the point $y\not\in L_1$. This line is $L_3'$ and $L_3'\cap L_1 = \emptyset$. Assume this line $L_3'$ was not the same as  $L_3$.   
 As shown in part (a) there are $n+1$ lines which include $y$ in $\mathcal{L}-L$. By assumption we know $L_3'$ cannot be $L_3$, the line parallel to $L_2$. So, $L_3'$ must be one of the $n$ remaining lines which pass through $y$. But there must also be a line containing $y$ and each point in $L_1$.  There are $n$ points in $L_1$. Thus, there are no possible lines left to be $L_3'$. It cannot exist.  
+Hence, for any three lines constructed using the result of (a), if $L_1\cap L_2 = \emptyset$ and $L_2\cap L_3 = \emptyset$, then $L_1\cap L_3 = \emptyset$.  
 
-Hence, if $L_1\cap L_2 = \emptyset$ and $L_2\cap L_3 = \emptyset$, then $L_1\cap L_3 = \emptyset$.  
+Suppose there exists a line $L_n$ parallel to line $L_0$ such that they are not built by this construction. Then, these lines would not satisfy the result above. But each point $x\not\in L$ corresponds to a unique line parallel to $L$. So then $L_n$ must contain a point $x_n\in L_0$. But in this case $L_0\cap L_n = \{x_n\}$. This is a contradiction.  
 
+Hence, if $L_1\cap L_2 = \emptyset$ and $L_2\cap L_3 = \emptyset$, then $L_1\cap L_3 = \emptyset$ in $A_L$.  
 
-***THIS NEEDS TO BE GENERALIZED FOR N>2***
 ###Question 3
 Let $L^ {* }$ be the poset dual of $L$, a geometric lattice.  
 
