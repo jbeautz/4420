@@ -8,7 +8,7 @@ jpb375
 Proof by Induction:  
 Base Case: $t=2$  
 
-Claim: If every two subset is in a unique block of $P$, then $b_{t,v} = v$. For $x\in P$, denote by $r_x$ the number of blocks containing $x$, and similarly for $B\in\mathcal B$, let $k_B=|B|$. This is not the trivial case so there is more than one block. If $x\not\in B$ then $r_x\geq k_L$ because there are $k_B$ other blocks containing $x$. Suppose $b\leq v$. Then $b(v-k_B)\geq v(b-r_x)$. Now counting this two ways we find
+Claim: If every two subset is in a unique block of $P$, then $b_{t,v} = v$. For $x\in P$, denote by $r_x$ the number of blocks containing $x$, and similarly for $B\in\mathcal B$, let $k_B=|B|$. The trivial case is not considered. If $x\not\in B$ then $r_x\geq k_L$ because there are $k_B$ other blocks containing $x$. Suppose $b\leq v$. Then $b(v-k_B)\geq v(b-r_x)$. Now counting this two ways we find
 $$1= \sum_{x\in P}\sum_{B\ni x} {1\over v(b-r_x)}\geq \sum_{B\in\mathcal B}\sum_{x\not\in B} {1\over b(v-k_L)} = 1$$
 This implies that in all inequalities, equalities must hold. Hence, $b= v$.  
 
@@ -48,12 +48,12 @@ Because the upper bound on ways to count elements in each $t$-set is all possibl
 
 Because $A_L$ is a linear space, there must exist a line $L_2$ between points $(x,y)$. Let $z$ be another point such that there exists another line $L_z$ defined by the pair $(y,z)$.  The smallest projective plane conatains $7$ points and results in $A_L$ containing 4 points as stated in the problem description. Thus, there is at least one other point $a$, in all cases, such that $(a,z)$ is contained in a line. Call this line $L_1$ and let it contain no other elements such that $L_1\cap L_2 = \emptyset$.  
 
-Fix $L_1$. $L_2$ must be unique. Suppose there is another line $L_2'$ such that $x\in L_2'$ and $L_1\cap L_2' = \emptyset$. Chapter 23 of the text states on page 322 that every line in a projective geometry of order $n$ have lines of size $n+1$. There are no sets of more than two parallel lines $A_L$ derived from the fano plane. Thus, every parallel line defined by a point not in a line is unique. Removing a line from a projective plane with order $n\geq 3$ will result in all lines having size $n$.  
+Fix $L_1$. $L_2$ must be unique. Suppose there is another line $L_2'$ such that $x\in L_2'$ and $L_1\cap L_2' = \emptyset$. Chapter 23 of the text states on page 322 that every line in a projective geometry of order $n$ have lines of size $n+1$. There are no sets of more than two parallel lines $A_L$ derived from the fano plane. Thus, every parallel line defined by a point not in a line is unique for $n=2$. Removing a line from a projective plane with order $n\geq 3$ will result in all lines having size $n$.  
 
-Consider $L_0\in \mathcal{L}-L$ and $x\not\in L_0$ . There are $n^2-1$ points in $P-L- \{x\}$ and $n-1$ points in each line, not including $x$.  Hence, there must be ${n^2-1\over n-1} = n+1$ lines going through $x$. We established earlier the line $L_0$ has $n$ points. And therefore there exist $n$ unique lines passing through $x$ which contain points on $L_0$. Hence, there is only one line remaining such that $x\not\in L_1$ and $L_1\cap L_0 = \emptyset$. Therefore for each line $L_0$ and point $x\not\in L_0$, there exists one distinct line $L_1$ such that $L_1\cap L_0 = \emptyset$ and $x\in L_0$.  
+Let $L_0\in \mathcal{L}-L$ and $x\not\in L_0$. Let the set of lines which contain $x$ be $L_x$. There are $n^2-1$ points in $P-L- \{x\}$ and $n-1$ points, not including $x$, in each line $L\in L_x$.  Hence, there must be ${n^2-1\over n-1} = n+1$ lines going through $x$. We established earlier the line $L_0$ has $n$ points. And therefore there exist $n$ unique lines passing through $x$ which contain points on $L_0$. Hence, there is only one line remaining such that $x\not\in L_1$ and $L_1\cap L_0 = \emptyset$. Therefore for each line $L_0$ and point $x\not\in L_0$, there exists one distinct line $L_1$ such that $L_1\cap L_0 = \emptyset$ and $x\in L_0$.  
 
 
-(b) For each line in $\mathcal{L}-L$, there exists a unique point not in the line which is in the parallel line. We can build any three lines using part (a).  
+(b) We can build any three pair-wise parallel lines using part (a).  
 Let $L_1,L_2,L_3\in \mathcal{L}-L$ be distinct lines. By part (a) of this question we know that for $L_1$ and a point $x\not\in L_1$, there must exist a unique line $L_2$ such that $x\in L_2$ and $L_2\cap L_1 = \emptyset$. For $L_2$ and some point $y\not\in L_2$ there exists a line $L_3$ such that $L_3\cap L_2 = \emptyset$.
 There is unique line corresponding to $L_1$ and the point $y\not\in L_1$. This line is $L_3'$ and $L_3'\cap L_1 = \emptyset$. Assume this line $L_3'$ was not the same as  $L_3$.   
 As shown in part (a) there are $n+1$ lines which include $y$ in $\mathcal{L}-L$. By assumption we know $L_3'$ cannot be $L_3$, the line parallel to $L_2$. So, $L_3'$ must be one of the $n$ remaining lines which pass through $y$. But there must also be a line containing $y$ and each point in $L_1$.  There are $n$ points in $L_1$. Thus, there are no possible lines left to be $L_3'$. It cannot exist.  
@@ -77,9 +77,9 @@ Let $A,B\in X$. Define $A\lor B$ as the smallest set $Z$ such that $A\cup B \sub
 Define $A\land B$ as the maximal set $W$ such that $W\subseteq A\cap B$. Because $A, B\subseteq X$, $W$ exists.  
 
 (b) $c$ is a closure operator if for all $A,B\subseteq X$,  
-(i) $A\subseteq c(A)$  
-(ii) If $A\subseteq B$, then $c(A)\subseteq c(B)$  
-(iii) $c(c(A)) = c(A)$  
+$(i)$ $A\subseteq c(A)$  
+$(ii)$ If $A\subseteq B$, then $c(A)\subseteq c(B)$  
+$(iii)$ $c(c(A)) = c(A)$  
 $$c(A) = \{y\in J: y\leq\bigvee A\}$$
 
 First, suppose there exists $A\subseteq L$ such that $A\not\subseteq c(A)$ such that $(i)$ is not true.
