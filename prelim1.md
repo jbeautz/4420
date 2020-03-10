@@ -48,12 +48,10 @@ Because the upper bound on ways to count elements in each $t$-set is all possibl
 
 Because $A_L$ is a linear space, there must exist a line $L_2$ between points $(x,y)$. Let $z$ be another point such that there exists another line $L_z$ defined by the pair $(y,z)$.  The smallest projective plane conatains $7$ points and results in $A_L$ containing 4 points as stated in the problem description. Thus, there is at least one other point $a$, in all cases, such that $(a,z)$ is contained in a line. Call this line $L_1$ and let it contain no other elements such that $L_1\cap L_2 = \emptyset$.  
 
-Fix $L_1$. $L_2$ must be unique. Suppose there is another line $L_2'$ such that $x\in L_2'$ and $L_1\cap L_2' = \emptyset$. Let $(a,z)\subseteq L_1$ and $(x,y')\subseteq L_2'$ and $(x,y)\subseteq L_2$, $y'\neq y$. Now, consider the line containing points $(y, y')$. The hypothesis requires that there is a unique line parallel to it which contains $x$.  
+Fix $L_1$. $L_2$ must be unique. Suppose there is another line $L_2'$ such that $x\in L_2'$ and $L_1\cap L_2' = \emptyset$. Chapter 23 of the text states on page 322 that every line in a projective geometry of order $n$ have lines of size $n+1$. There are no sets of more than two parallel lines $A_L$ derived from the fano plane. Thus, every parallel line defined by a point not in a line is unique. Removing a line from a projective plane with order $n\geq 3$ will result in all lines having size $n$.  
 
-But $x\in (x,a)$ and $x\in (x,z)$. Both of which are parallel to $(y,y')$. Thus $(y,y')$ cannot exist and as a result $(x,y)$ is unique with respect to the property.  
+Consider $L_0\in \mathcal{L}-L$ and $x\not\in L_0$ . There are $n^2-1$ points in $P-L- \{x\}$ and $n-1$ points in each line, not including $x$.  Hence, there must be ${n^2-1\over n-1} = n+1$ lines going through $x$. We established earlier the line $L_0$ has $n$ points. And therefore there exist $n$ unique lines passing through $x$ which contain points on $L_0$. Hence, there is only one line remaining such that $x\not\in L_1$ and $L_1\cap L_0 = \emptyset$. Therefore for each line $L_0$ and point $x\not\in L_0$, there exists one distinct line $L_1$ such that $L_1\cap L_0 = \emptyset$ and $x\in L_0$.  
 
-***UNIQUENESS STILL NEEDED***
-***(x,y,y')--> same line???***
 
 (b) For each line in $\mathcal{L}-L$, there exists a unique point not in the line which is in the parallel line. We can build any three lines using part (a).  
 Let $L_1,L_2,L_3\in \mathcal{L}-L$ be distinct lines. By part (a) of this question we know that for $L_1$ and a point $x\not\in L_1$, there must exist a unique line $L_2$ such that $x\in L_2$ and $L_2\cap L_1 = \emptyset$. For $L_2$ and some point $y\not\in L_2$ there exists a line $L_3$ such that $L_3\cap L_2 = \emptyset$.
@@ -62,6 +60,7 @@ There is unique line corresponding to $L_1$ and the point $y\not\in L_1$. This l
 Hence, if $L_1\cap L_2 = \emptyset$ and $L_2\cap L_3 = \emptyset$, then $L_1\cap L_3 = \emptyset$.  
 Because the result of part (a) holds a unique result for $L$ and each point not in $L$, it accounts for all lines parallel to $L$. Assume there is a line $L'$ parallel to $L$ which does not contain a unique point not in $L$. Then $L'$ contains a point in $L$ and is not parallel. Thus, the argument above accounts for all lines parallel to $L_1,L_2,L_3$.  
 
+***THIS NEEDS TO BE GENERALIZED FOR N>2***
 ###Question 3
 Let $L^ {* }$ be the poset dual of $L$, a geometric lattice.  
 
