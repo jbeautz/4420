@@ -4,7 +4,7 @@ Jack Beautz
 jpb375  
 
 #Discussion Question 2b
-##Prove that an edge of G is a coloop of M(G) if and only if removing it from the graph (but leaving all vertices intact) increases the number of components of G by one.
+####Prove that an edge of G is a coloop of M(G) if and only if removing it from the graph (but leaving all vertices intact) increases the number of components of G by one.
 
 $$\to$$
 Removing an edge $e$ from the graph increases the number of components by one.
