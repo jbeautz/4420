@@ -1,4 +1,4 @@
-<font color = white>  
+<font color = black>  
 
 Jack Beautz  
 jpb375
@@ -43,6 +43,8 @@ Transitive: If $x\sim y$ and $y\sim z$, if there is any pair wise equality among
 
 $(c)$  
 Suppose there exists a rank 1 element $\{x,y\}$ in the matroid which was not a parallel class. Because this element is not a parallel class, $r(x)+r(y)=r(\{x,y\})$. Hence, without loss of generality, say $r(x)=1$. Then, for $\{x,y\}$ to have rank 1, $r(\{y\})=0$. But there are no loops in the matroid. Hence, this is impossible. All rank one elements are parallel classes.  
+
+Let $F$ be a flat which a union of parallel classes $\{x_1,y_1\},...,\{x_n,y_n\}$ and another element $z$ where $z$ is not a parallel class. As established above, this implies that $z$ has rank greater than 1, because all rank 1 elements are parallel classes and there are no loops. Because $r(\{z\})> 1$, $z$ must be the union of lower rank elements. These lower elements must be parallel classes because they are the only matroid elements of rank 1. Hence, $z$ is also the union of parallel classes. So the flat $F$ must be the union of parallel classes if it is the union of anything.   
 
 
 
