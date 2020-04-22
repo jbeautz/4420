@@ -21,7 +21,8 @@ But upon the contraction of a $x$, $y$ becomes a loop. Thus, there is no proper 
 $$\chi_M(\lambda)=\chi_{M-x}(\lambda)$$
 
 ##Exercise 3
-
+The first term of the characteristic polynomial is $\lambda^{r(X)}$ for any matroid, so it must be for this one.  
+As discussed in Exercise 1, the second term will be negative and count the number of distinct rank 1 subsets of the ground set. Suppose there exists a rank one subset of $X$ which is not a parallel class. There are no loops in $M$ so all subsets are of cardinality 
 
 
 
