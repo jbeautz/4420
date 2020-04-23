@@ -29,8 +29,12 @@ Let $a_i=|A_i|$ where $A_i = \{Y\subseteq X: r(Y)=i\}$.
 By defintion of rank, if $r(Y)\leq |Y|$.  
 As discussed earlier the absolute value of the coefficient of the $i$th term in the polynomial is $a_i$. The maximum value possible for $a_i$ occurs when all cardinality $i$ subsets have full rank.  In this case $a_i$ is the number of $i$ subsets in the base set $X$. Hence, $a_i\leq {|X|\choose i}$
 
-Note, this maximal $a_i$ events occurs only when all $i$ subsets have full rank. 
+If every subset of $i+1$ or less is independent, then these sets all have full rank. This implies the only sets which have rank $i$ are the sets of size $i$. If this occurs, the number of rank $i$ subsets, which is equivalent to the absolute value of $a_i$, is equivalent to $|X|\choose i$.  
 
+If $|a_i|={|X|\choose i}$, then the number of rank $i$ subsets is equivalent to $|X|\choose i$. Suppose $u$ is an $i+1$-subset of $X$ such that $r(u)=i$. Then, $a_i\leq {|X|\choose i}+1$. But $a_i={|X|\choose i}$ so there must be an $i$ subset with a dependent element. Hence, $a_{i-1}\leq {|X|\choose i-1}+1$. But $a_{i-1}={|X|\choose i-1}$ so there must be a dependent $i-1$ subset. This pattern will continue until you find there must be a dependent $1$-subset. This is impossible, because there are no loops in the matroid. Hence, there cannot be a dependent subset in the matroid. Finally, this implies all $i$-subsets must have rank $i$. All subsets of $X$ in the matroid are independent.  
+
+
+##Exercise 5
 
 
 
