@@ -35,7 +35,12 @@ If $|a_i|={|X|\choose i}$, then the number of rank $i$ subsets is equivalent to 
 
 
 ##Exercise 5
+$$\chi_M (\lambda) = \sum_{A\subseteq X} (-1)^{|A|}\lambda^{r(X)-r(A)}$$
 
+As discussed before, the absolute value of the $i$th term will be the number of subsets of rank $i$. In this case, there will be $n\choose i$ subsets of rank $i$. The maximum rank in $U(3,n)$ is 3 because it is the maximum cardinality subset of the base set included in the matrix. Thus, the characteristic is as follows:
+$$\chi_{U(3,n)}(\lambda)=\lambda^3 - {n\choose 1}\lambda^2+{n\choose 2}\lambda^1 -{n\choose 3}$$
+Or, simplified
+$$\chi_{U(3,n)}(\lambda)=\lambda^3 - n\lambda^2+{n\choose 2}\lambda^1 -{n\choose 3}$$
 
 
 
