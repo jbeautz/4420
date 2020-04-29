@@ -1,4 +1,4 @@
-<font color = white>
+<font color = black>
 
 Jack Beautz  
 jpb375  
@@ -8,7 +8,7 @@ jpb375
 ##Exercise 1
 $$\chi_M (\lambda) = \sum_{A\subseteq X} (-1)^{|A|}\lambda^{r(X)-r(A)}$$
 
-The coefficient of $\lambda^{r(X)-1}$ will be the number of $A\subseteq X$ which have $r(A)=1$ times.  
+The absolute value coefficient of $\lambda^{r(X)-1}$ will be the number of $A\subseteq X$ which have $r(A)=1$ times.  
 This coefficient must be negative because if $r(A)=1$, $|A|$ must be one in a simple matroid.
 The set of distinct rank 1 subsets must be the set of singletons because there are no loops in a simple matroid. Hence, the cardinality of the set of rank 1 subsets is $|X|$. Thus, the next term of $\chi_M(\lambda)$ is $-|X|\lambda^{r(X)-1}$.  
 
@@ -26,7 +26,7 @@ As discussed in Exercise 1, the second term will be negative and count the numbe
 
 ##Exercise 4
 Let $a_i=|A_i|$ where $A_i = \{Y\subseteq X: r(Y)=i\}$.  
-By defintion of rank, if $r(Y)\leq |Y|$.  
+By definition of rank, if $r(Y)\leq |Y|$.  
 As discussed earlier the absolute value of the coefficient of the $i$th term in the polynomial is $a_i$. The maximum value possible for $a_i$ occurs when all cardinality $i$ subsets have full rank.  In this case $a_i$ is the number of $i$ subsets in the base set $X$. Hence, $a_i\leq {|X|\choose i}$
 
 If every subset of $i+1$ or less is independent, then these sets all have full rank. This implies the only sets which have rank $i$ are the sets of size $i$. If this occurs, the number of rank $i$ subsets, which is equivalent to the absolute value of $a_i$, is equivalent to $|X|\choose i$.  
