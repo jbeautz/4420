@@ -38,7 +38,8 @@ $$\chi_M(\lambda)=\prod_{i=1}^{n-1} (\lambda-i)$$
 
 
 
-
+complete graph has chromatic polynomial $(x)_ k$.
+The partition matrix has 
 
 
 
