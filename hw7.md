@@ -1,4 +1,4 @@
-<font color = white>  
+<font color = black>  
 
 Jack Beautz  
 jpb375  
@@ -34,12 +34,17 @@ $$g=M_p^{-1}f$$
 $$g=Z_p f$$  
 
 ##Exercise 2
-$$\chi_M(\lambda)=\prod_{i=1}^{n-1} (\lambda-i)$$
-
-
-
-complete graph has chromatic polynomial $(x)_ k$.
-The partition matrix has 
+$$\chi_M(\lambda)=(\lambda-1)_ n$$
+Note the partition lattice of $[n]$ is isomorphic to the prime decomposition of $n!$
+Consider the Euler Totient function
+$$\phi(n)=n\prod_{p|n}(1-{1\over p})$$
+And its relation to the mobius function
+$$\phi(n)=\sum_{d|n}\mu(d,n)d$$
+The partition lattice $\Pi_n$ is isomorphic to the prime decomposition of $n!$  
+We can define the characteristic polynomial over the poset of a factorization lattice of $n$
+$$\chi_n(\lambda)=\sum_{d|n}\mu(1,d)\lambda^{n/d}$$
+This can then be factored such that
+$$\chi_n(\lambda)=(\lambda-1)_ n$$
 
 
 
