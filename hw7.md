@@ -28,6 +28,42 @@ $$g = Z_P f$$
 And $f(y)=\sum_{x\leq y}g(x)\mu(x,y)$ as
 $$f = M_P g$$
 where the rows of $f$ and $g$ index all elements of the poset.  
-Note, $M_P$ and $Z_P$ are invertible so it suffices so show $M_P^{-1}=Z_P$. By defintion of the mobius function this is true, thus the statement is true.   
+Note, $M_P$ and $Z_P$ are invertible so it suffices so show $M_P^{-1}=Z_P$. By defintion of the mobius function this is true, thus the statement is true.
+$$M_pg = f$$
+$$g=M_p^{-1}f$$
+$$g=Z_p f$$  
 
 ##Exercise 2
+$$\chi_M(\lambda)=\prod_{i=1}^{n-1} (\lambda-i)$$
+
+
+
+
+
+
+
+
+
+
+
+
+##Exercise 3
+Assume $\mu(x,y)=(-1)^{r_P(y)-r_P(x)}$ for all $x\leq y$. Consider the case where $x=y$, then $\mu(x,x)=1=(-1)^0$. If $x<y$, then $\sum_{x\leq z\leq y}\mu(z,y)=0$. Suppose without loss of generality that in the interval $[x,y]$ there are more even rank elements than odd rank elements. Because the lattice is graded, the length of the maximal path between $x$ and $y$ is $l = r_P(y)-r_P(x)$. There are more even rank elements than odd rank elements in the interval so the summation over the whole interval will be not equal to 0. Consider that $\sum_{x\leq x\leq y}\mu(x,y)=0$ implies that the summation elements will negate each other. Hence, there must be an equal number of odd and even rank elements in the interval.
+
+Assume there is an equal number of even rank subsets and odd rank subsets in any interval $[x,y]$ of the poset $P$. We know $\sum_{x\leq x\leq y}\mu(x,y)=0$. Use induction on $z\in [x_1,x_k]$ where $x_k=y$. Base case has $z=x_1$ which leads $\mu(x_1,z)=1$. The defintion of the mobius function requires $\sum_{x\leq x\leq y}\mu(x,y)=0$ so $\mu(x_1,x_1)+\mu(x_1,x_2)=0$. This requires that $\mu(x_1,x_2)=-1$. Now in general consider the summation over the interval $[x_i,x_{i+1}]$. This must also be 0. Thus, at each interval in the value of the summation on the mobius function must be 0 and the individual mobius function outputs must be either 1 or -1 for each step. Now, consider the generic case where we sum over $[x_1,x_k]$. There is an equal number of odd and even rank elements in the interval so the positive and negative ones will cancel each other out along the way. Thus, $\mu(x,y)=(-1)^{r_p(x_k)-r_p(x_1)}$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***THE END***
